@@ -19,11 +19,15 @@ print(f"Updated Raph: Name: {c1.name}, Species: {c1.species}, Level: {c1.level},
 name, species = input("Name: "), input("Species: ")
 
 while True:
-    try: level = int(input("Level: ")); break
+    try:
+        level = int(input("Level: "))
+        break
     except ValueError: print("Enter a valid #.")
 
 while True:
-    try: health = float(input("Health: ")); break
+    try:
+        health = float(input("Health: "))
+        break
     except ValueError: print("Enter a valid number.")
 
 user = Creature(name, species, level, health)
